@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <title>Building Impressive Presentations with Impress.js | Data Scale Application</title>
+    <link href="http://fonts.googleapis.com/css?family=Oswald:bold|Arvo:bold|Cutive+bold|Orbitron:bold|Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <style>
+        body {
+            background: #3669AE;
+        }
+        
+        .slide {
+            border: 10px solid;
+            color: #fff;
+            font-weight: bold;
+            width: 1000px;
+            height: 600px;
+            text-align: center;
+            font-size: 45px;
+            background: none repeat scroll 0 0 #3669AE;
+        }
+        
+        .past {
+            background: none repeat scroll 0 0 #255225;
+        }
+        
+        .flex {
+            display: -webkit-flex;
+            display: flex;
+            height: 500px;
+            color: white;
+            flex-direction: column;
+        }
+        
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .center-in-flex {
+            margin: 0 auto;
+        }
+        
+        ul {
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        ul.middle {
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="impress">
+
+        <!-- Row 1 -->
+        <div id="overview" class="step" data-x="1800" data-y="1500" data-scale="5">
+        </div>
+        <div id="slide1" class="step slide" data-x="0">
+            <div class="flex">
+                <h2>What git can do?</h2>
+                <div class="center-in-flex">
+                    <ul>
+                        <li>backup code</li>
+                        <li>roll-back to a specific point</li>
+                        <li>collabortive programming</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="slide2" class="step slide" data-x="1200">
+            <div>
+                <h2>What is git?</h2>
+                <p>Source code management system (SCMs)</p>
+            </div>
+        </div>
+
+
+        <div id="slide3" class="step slide" data-x="2400">
+            <div>
+                <h2>background of SCMs</h2>
+                <p>SVN, CVS, ......</p>
+            </div>
+        </div>
+
+        <div id="slide4" class="step slide" data-x="3600">
+            <div class="flex">
+                <h2>Install git</h2>
+                <ul class="center-in-flex">
+                    <li>1. comder for Windows</li>
+                    <li>if git version is too low, download git, copy all files to comder/vendor/msysgit</li>
+                    <li>2. brew install git for Mac</li>
+                    <li>git --version</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Row 1 End -->
+
+        <!-- Row 2 -->
+        <div id="slide5" class="step slide" data-y="700" data-x="0">
+            <div class="flex">
+                <h2>Config</h2>
+                <ul class="center-in-flex">
+                    <li>system level: for all users (git config --system user.name "Jackson")</li>
+                    <li>global or user level: for specific user (git config --global user.name "Jackson") </li>
+                    <li>local level: for specific git repository (git config --local user.name "Jackson")</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="slide6" class="step slide" data-y="700" data-x="1200">
+            <div class="flex">
+                <h2>Verify config</h2>
+                <ul class="center-in-flex">
+                    <li>git config --global --edit</li>
+                    <li>this opens ~/.gitconfig</li>
+                    <li>for local: .git/config</li>
+                    <li>for system: /etc/gitconfig</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="slide7" class="step slide" data-y="700" data-x="2400">
+            <div>
+                <h2 style='margin:0px;'>Git Concepts</h2>
+                <img src="git-repository.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="slide8" class="step slide" data-y="700" data-x="3600">
+            <div class="flex">
+                <h2>Init repository</h2>
+                <ul class="center-in-flex">
+                    <li>git init</li>
+                    <li>open .git</li>
+                    <li>show only copy .git to backup all files, "git checkout ." to get files</li>
+                    <li>write .git/config by 'git config' </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- Row 2 End -->
+
+        <!-- Row 3 -->
+
+        <div id="slide9" class="step slide" data-y="1400" data-x="0">
+            <div class="flex">
+                <h2>Staging, Commits</h2>
+                <ul class='center-in-flex'>
+                    <li>create a new file</li>
+                    <li>git status</li>
+                    <li>git add</li>
+                    <li>git commit -m [-am]</li>
+                    <li>git commit -a --amend</li>
+                    <li>git log -1 --oneline</li>
+                    <li>git log --graph</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="slide10" class="step slide" data-y="1400" data-x="1200">
+            <div>
+                <h2>Git ignore</h2>
+                <ul>
+                    <li>create a file</li>
+                    <li>git status</li>
+                    <li>.gitignore</li>
+                    <li>git status</li>
+                    <li>git config --global --edit to add ignore file globally</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="slide11" class="step slide" data-y="1400" data-x="2400">
+            <div>
+                <h2>Github</h2>
+                <ul>
+                    <li>create repository</li>
+                    <li>git clone</li>
+                    <li>git add; git commit;</li>
+                    <li>git push</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="slide12" class="step slide" data-y="1400" data-x="3600">
+            <div>
+                <h2>Contributing</h2>
+                <ul>
+                    <li>fork, clone</li>
+                    <li>read 'contributing.md' file</li>
+                    <li>make changes</li>
+                    <li>commit</li>
+                    <li>create 'pull request'</li>
+                    <li>merge 'pull request'</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Row 3 ends -->
+        <!-- Row 4 -->
+
+        <div id="slide13" class="step slide" data-y="2100" data-x="0">
+            <div class="flex">
+                <h2>Branch</h2>
+                <ul class='center-in-flex middle'>
+                    <li>Branch: the pointer to commit object</li>
+                    <li>git branch -a</li>
+                    <li>git branch hotfix</li>
+                    <li>git checkout hotfix</li>
+                    <li>git branch -a to see current branch get changed</li>
+                    <li>git checkout master</li>
+                    <li>git branch -d hotfix</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="slide14" class="step slide" data-y="2100" data-x="1200">
+            <div class="flex">
+                <h2>Pull and Fetch</h2>
+                <ul class='center-in-flex middle'>
+                    <li>git branch hotfix</li>
+                    <li>git checkout hotfix</li>
+                    <li>make fix</li>
+                    <li>git checkout master</li>
+                    <li>git fetch . hotfix (just get changes info from hotfix)</li>
+                    <li>vim .git/FETCH_HEAD</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="slide15" class="step slide" data-y="2100" data-x="2400">
+            <div class="flex">
+                <h2>Diff</h2>
+                <ul class='center-in-flex middle'>
+                    <li>git diff FETCH_HEAD</li>
+                    <li>git pull . hotfix</li>
+                    <li>modify file in master branch</li>
+                    <li>git diff (diffing file between working directory and current branch</li>
+                    <li>git diff master hotfix</li>
+                    <li>compare to: git diff hotfix master</li>
+                    <li>git diff master hotfix --name-only</li>
+                    <li>git diff master hotfix --stat</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="slide15" class="step slide" data-y="2100" data-x="3600">
+            <div class="flex">
+                <h2>Merge</h2>
+                <ul class='center-in-flex middle'>
+                    <li>git checkout -b newfix</li>
+                    <li>make fix</li>
+                    <li>git checkout master</li>
+                    <li>git merge newfix</li>
+                    <li>explain 'fast-forward' (just move pointer forward)</li>
+                    <li>explain 'recursive stratge' by change both branches and do merge</li>
+                    <li>explain merge conflicts by change same file in both branch</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Row 4 End -->
+        <!-- Row 5 -->
+        <div id="slide16" class="step slide" data-y="2800" data-x="0">
+            <div class="flex">
+                <h2>Tag (marking releases)</h2>
+                <ul class='center-in-flex middle'>
+                    <li>1. Simple tag</li>
+                    <li>git tag</li>
+                    <li>git log --oneline</li>
+                    <li>git tag 0.1.0</li>
+                    <li>git tag</li>
+                    <li>git show 0.1.0</li>
+                    <li>2. annotated tag</li>
+                    <li>git tag -a 0.0.1 423fc13</li>
+                    <li>git checkout 0.0.1</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="slide16" class="step slide" data-y="2800" data-x="1200">
+            <div class="flex">
+                <h2>Stash changes</h2>
+                <ul class='center-in-flex middle'>
+                    <li>In situation, we need switch branch, but can't because the branch has uncommited changes, stash is the way to save uncommited changes somewhere and restore later</li>
+                    <li>git checkout -b newfix3; fixing things</li>
+                    <li>git stash (save changes and make branch clean)</li>
+                    <li>git stash list</li>
+                    <li>continuing fixing things</li>
+                    <li>git stash (now have 2 stashes</li>
+                    <li>git stash show stash@{1} -p</li>
+                    <li>git diff stash@{0}..stash@{1}</li>
+                    <li>git stash drop stash@{0} OR git stash clear</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="slide17" class="step slide" data-y="2800" data-x="2400">
+            <div class="flex">
+                <h2>Stash (more)</h2>
+                <ul class='center-in-flex middle'>
+                    <li>git checkout -b newfix4</li>
+                    <li>fixing things</li>
+                    <li>git stash save "fixing a UI bug"</li>
+                    <li>git stash list (now stash has messages)</li>
+                    <li>git stash apply (still keep the stash)</li>
+                    <li>or git stash pop (remove the stash)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="slide18" class="step slide" data-y="2800" data-x="3600">
+            <div class="flex">
+                <h2>Rebate</h2>
+                <ul class='center-in-flex middle'>
+                    <li>git checkout -b newfix5</li>
+                    <li>fixing things and commit</li>
+                    <li>fixing another thing and commit again</li>
+                    <li>git log --oneline</li>
+                    <li>git rebase -i commithash (interactive rebase)</li>
+                    <li>git stash list (now stash has messages)</li>
+                    <li>git stash apply (still keep the stash)</li>
+                    <li>or git stash pop (remove the stash)</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Row 6 -->
+        <div id="slide19" class="step slide" data-y="3500" data-x="0">
+            <div class="flex">
+                <h2>Git Internal</h2>
+                <ul class='center-in-flex middle'>
+                    <li>git object type: blob, tree, commit</li>
+                    <li>show object info: git cat-file -p (sha1-hash)</li>
+                    <li>blob/tree structure: file permission, object type, Sha1-hash, file/dir name</li>
+                    <li>1. Store file: blob (file contents)</li>
+                    <li>referenced by SHA-1 value: 20 bytes => 40 hex digits</li>
+                    <li>file content: zlib</li>
+                    <li>2. Store directories: tree (</li>
+                    <li>3. Store snapshots: commit</li>
+                    <li>commit object info: author, committer, commit message, sha-1 of parent commit, sha-1 of the tree that the commit points to</li>
+                </ul>
+            </div>
+        </div>
+        <div id="slide20" class="step slide" data-y="3500" data-x="1200">
+            <div class="flex">
+                <h2>Commit object (more)</h2>
+                <ul class='center-in-flex middle'>
+                    <img src="commit_object.jpg" alt="">
+                </ul>
+            </div>
+        </div>
+
+        <div id="slide21" class="step slide" data-y="3500" data-x="2400">
+            <div class="flex">
+                <h2>Ancestry References</h2>
+                <ul class='center-in-flex middle'>
+                    <img src="head-references.jpg" alt="">
+                </ul>
+            </div>
+        </div>
+        <div class="step" data-x="1800" data-y="1500" data-scale="5">
+        </div>
+
+    </div>
+    <script src="/impressjs/js/impress.js"></script>
+    <script>
+        impress().init();
+    </script>
+
+
+</body>
+
+</html>

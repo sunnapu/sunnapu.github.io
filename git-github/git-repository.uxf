@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>390</x>
+      <y>450</y>
+      <w>110</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Staging area
+(index)
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>720</x>
+      <y>380</y>
+      <w>60</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>HEAD
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>590</x>
+      <y>400</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>C3
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>210</x>
+      <y>340</y>
+      <w>110</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Untracked 
+files
+bg=green
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>590</x>
+      <y>450</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>C2
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>590</x>
+      <y>500</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>C1
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>600</x>
+      <y>380</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+bg=cyan</panel_attributes>
+    <additional_attributes>30;40;120;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>560</x>
+      <y>360</y>
+      <w>100</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Commits
+(Snapshots)
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>350</x>
+      <y>340</y>
+      <w>470</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Git
+Repository
+(.git folder)
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>210</x>
+      <y>480</y>
+      <w>110</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Changes not
+staged
+bg=green
+fg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>170</x>
+      <y>290</y>
+      <w>670</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>Working Directory
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
